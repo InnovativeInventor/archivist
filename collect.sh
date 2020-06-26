@@ -1,3 +1,13 @@
+python3 archive.py snscrape >> snscrape.txt
+
+sort -u snscrape.txt > snscrape-temp.txt
+cat snscrape-temp.txt > snscrape.txt
+rm snscrape-temp.txt
+
+bash snscrape.txt > items.txt
+
+go run deduplicate.go | sort -u | python3 jobsplit.py
+
 ## Categories
 # gov
 #python3 archive.py TwitterGov socialbot >> socialbot.txt
@@ -19,15 +29,6 @@
 #python3 archive.py techcrunch socialbot >> socialbot.txt 
 
 #python3 archive.py socialbot >> socialbot.txt
-python3 archive.py snscrape >> snscrape.txt
-
-sort -u snscrape.txt > snscrape-temp.txt
-cat snscrape-temp.txt > snscrape.txt
-rm snscrape-temp.txt
-
-screen bash snscrape.txt > items.txt
-
-time go run deduplicate.go > unique-items.txt
 ## Sorting
 #sort -u socialbot.txt > socialbot-temp.txt
 #cat socialbot-temp.txt > socialbot.txt

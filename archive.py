@@ -2,14 +2,16 @@ import tweepy
 import sys
 from config import consumer_token, consumer_secret, access_token, access_token_secret
 
+
 def connect():
     """
     Connects and auths to tweepy API
     """
-    auth = tweepy.OAuthHandler(consumer_token, consumer_secret) 
+    auth = tweepy.OAuthHandler(consumer_token, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth, wait_on_rate_limit=True)
     return api
+
 
 def account_lists(account: str, socialbot=False):
     """
@@ -30,6 +32,7 @@ def account_lists(account: str, socialbot=False):
         except tweepy.error.TweepError as e:
             raise ValueError(account + str(e))
 
+
 def iterate_accounts(filename: str = "accounts.txt", socialbot: bool = False):
     """
     Iterates through all the accounts in accounts.txt
@@ -43,6 +46,7 @@ def iterate_accounts(filename: str = "accounts.txt", socialbot: bool = False):
                     print("snscrape twitter-user", each_line.rstrip())
 
                 account_lists(each_line.rstrip(), socialbot)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 1:
