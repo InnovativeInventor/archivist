@@ -229,6 +229,7 @@ snscrape twitter-user DisRightsTx
 snscrape twitter-user DonYoungAK
 snscrape twitter-user DougForDakota
 snscrape twitter-user DouthatNYT
+snscrape twitter-user DrBurgessTX
 snscrape twitter-user DrMikeRyan
 snscrape twitter-user DrMukhisaKituyi
 snscrape twitter-user DrNancyM_CDC
@@ -1342,6 +1343,7 @@ snscrape twitter-user garcia_alexndra
 snscrape twitter-user gbellseattle
 snscrape twitter-user geoffmulvihill
 snscrape twitter-user georgehenryAP
+snscrape twitter-user gerrymandr
 snscrape twitter-user gflaccus
 snscrape twitter-user gillianwong
 snscrape twitter-user gillibrandny
@@ -1549,6 +1551,7 @@ snscrape twitter-user pnud
 snscrape twitter-user pololikashvili
 snscrape twitter-user poroshenko
 snscrape twitter-user porterthereport
+snscrape twitter-user princetongerry
 snscrape twitter-user profvrr
 snscrape twitter-user pxwhittle
 snscrape twitter-user rachel_dry
@@ -1682,5 +1685,3 @@ snscrape twitter-user yuenok
 snscrape twitter-user zhonggg
 snscrape twitter-user zivkapark
 snscrape twitter-user zzoemoee
-snscrape twitter-user princetongerry
-snscrape twitter-user gerrymandr
