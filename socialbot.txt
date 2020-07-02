@@ -4845,3 +4845,17 @@ socialbot: snscrape twitter-user DisRightsTx
 socialbot: snscrape twitter-user MassLS
 socialbot: snscrape twitter-user PineTreeLegal
 socialbot: snscrape twitter-user LegalAidNYC
+socialbot: snscrape twitter-user hkpoliceforce
+socialbot: snscrape twitter-user rcfp
+socialbot: snscrape twitter-user chowtingagnes
+socialbot: snscrape twitter-user jeffreychngo
+socialbot: snscrape twitter-user nathanlawkc
+socialbot: snscrape twitter-user joshuawongcf
+socialbot: snscrape twitter-user demosisto
+socialbot: snscrape twitter-user HongKongFP
+socialbot: snscrape twitter-hashtag deathforxijinping
+socialbot: snscrape twitter-hashtag NSL
+socialbot: snscrape twitter-hashtag CausewayBay
+socialbot: snscrape twitter-hashtag HKIndependence
+socialbot: snscrape twitter-hashtag NationalSecurityLaw
+

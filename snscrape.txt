@@ -1,3 +1,8 @@
+snscrape twitter-hashtag CausewayBay
+snscrape twitter-hashtag HKIndependence
+snscrape twitter-hashtag NSL
+snscrape twitter-hashtag NationalSecurityLaw
+snscrape twitter-hashtag deathforxijinping
 snscrape twitter-list-posts 1225540451920482306
 snscrape twitter-search "legal aid"
 snscrape twitter-user 10YFP
@@ -371,6 +376,7 @@ snscrape twitter-user HolcombForIN
 snscrape twitter-user HolySeeUN
 snscrape twitter-user HonAhmedHussen
 snscrape twitter-user HonEdgarCLungu
+snscrape twitter-user HongKongFP
 snscrape twitter-user HughGaffneyCCB
 snscrape twitter-user HumanitarianID
 snscrape twitter-user IAF_MCC
@@ -1282,6 +1288,7 @@ snscrape twitter-user chicago
 snscrape twitter-user chicagosmayor
 snscrape twitter-user choate_robotics
 snscrape twitter-user choatenews
+snscrape twitter-user chowtingagnes
 snscrape twitter-user chrisshermanAP
 snscrape twitter-user christophclarey
 snscrape twitter-user cio_ebooks
@@ -1302,6 +1309,7 @@ snscrape twitter-user davidzucchino
 snscrape twitter-user dclark5
 snscrape twitter-user dealbook
 snscrape twitter-user deepakm71
+snscrape twitter-user demosisto
 snscrape twitter-user dgblankinship
 snscrape twitter-user dhajela
 snscrape twitter-user dhopkins1776
@@ -1370,6 +1378,7 @@ snscrape twitter-user heislerphoto
 snscrape twitter-user henryfountain
 snscrape twitter-user herbertnyt
 snscrape twitter-user hkbeech
+snscrape twitter-user hkpoliceforce
 snscrape twitter-user hkumed
 snscrape twitter-user hlswift_
 snscrape twitter-user homesweethome
@@ -1404,6 +1413,7 @@ snscrape twitter-user jcohenap
 snscrape twitter-user jdanborn
 snscrape twitter-user jdelreal
 snscrape twitter-user jeffkaroub
+snscrape twitter-user jeffreychngo
 snscrape twitter-user jefurticella
 snscrape twitter-user jennifertparker
 snscrape twitter-user jennymedina
@@ -1419,6 +1429,7 @@ snscrape twitter-user jmartNYT
 snscrape twitter-user jmblanquer
 snscrape twitter-user jongambrellAP
 snscrape twitter-user joshchafetz
+snscrape twitter-user joshuawongcf
 snscrape twitter-user jotted
 snscrape twitter-user joyindc
 snscrape twitter-user jseewerap
@@ -1502,6 +1513,7 @@ snscrape twitter-user murielpenicaud
 snscrape twitter-user mzvcr
 snscrape twitter-user namibia_mfa
 snscrape twitter-user nataliexdean
+snscrape twitter-user nathanlawkc
 snscrape twitter-user ndmaindia
 snscrape twitter-user nekesamumbi
 snscrape twitter-user newshound16
@@ -1557,6 +1569,7 @@ snscrape twitter-user pxwhittle
 snscrape twitter-user rachel_dry
 snscrape twitter-user radiookapi
 snscrape twitter-user rbfallstromAP
+snscrape twitter-user rcfp
 snscrape twitter-user rcjonesphoto
 snscrape twitter-user readercenter
 snscrape twitter-user realDonaldTrump
