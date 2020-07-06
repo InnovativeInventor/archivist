@@ -1,4 +1,3 @@
-snscrape twitter-hashtag CausewayBay
 snscrape twitter-hashtag HKIndependence
 snscrape twitter-hashtag NSL
 snscrape twitter-hashtag NationalSecurityLaw
