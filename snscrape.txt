@@ -1,10 +1,4 @@
-snscrape twitter-hashtag HKIndependence
-snscrape twitter-hashtag NSL
-snscrape twitter-hashtag NationalSecurityLaw
-snscrape twitter-hashtag deathforxijinping
-snscrape twitter-hashtag streetlaw
 snscrape twitter-list-posts 1225540451920482306
-snscrape twitter-search "legal aid"
 snscrape twitter-user 10YFP
 snscrape twitter-user 3807Limon
 snscrape twitter-user 538PollBot

@@ -4853,11 +4853,6 @@ socialbot: snscrape twitter-user nathanlawkc
 socialbot: snscrape twitter-user joshuawongcf
 socialbot: snscrape twitter-user demosisto
 socialbot: snscrape twitter-user HongKongFP
-socialbot: snscrape twitter-hashtag deathforxijinping
-socialbot: snscrape twitter-hashtag NSL
-socialbot: snscrape twitter-hashtag CausewayBay
-socialbot: snscrape twitter-hashtag HKIndependence
-socialbot: snscrape twitter-hashtag NationalSecurityLaw
 socialbot: snscrape twitter-user AlvinYeungnk
 socialbot: snscrape twitter-user ray_slowbeat
 socialbot: snscrape twitter-user ChuHoiDick

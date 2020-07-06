@@ -1,0 +1,6 @@
+snscrape twitter-hashtag HKIndependence
+snscrape twitter-hashtag NSL
+snscrape twitter-hashtag NationalSecurityLaw
+snscrape twitter-hashtag deathforxijinping
+snscrape twitter-hashtag streetlaw
+snscrape twitter-search "legal aid"
