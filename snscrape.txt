@@ -1,6 +1,7 @@
 snscrape twitter-hashtag CausewayBay
 snscrape twitter-hashtag HKIndependence
 snscrape twitter-hashtag NSL
+snscrape twitter-hashtag streetlaw
 snscrape twitter-hashtag NationalSecurityLaw
 snscrape twitter-hashtag deathforxijinping
 snscrape twitter-list-posts 1225540451920482306
@@ -1698,3 +1699,7 @@ snscrape twitter-user yuenok
 snscrape twitter-user zhonggg
 snscrape twitter-user zivkapark
 snscrape twitter-user zzoemoee
+snscrape twitter-user NateSilver538
+snscrape twitter-user USPhongkong
+snscrape twitter-user NAACP
+snscrape twitter-user NAACP_LDF

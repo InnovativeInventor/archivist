@@ -4858,4 +4858,9 @@ socialbot: snscrape twitter-hashtag NSL
 socialbot: snscrape twitter-hashtag CausewayBay
 socialbot: snscrape twitter-hashtag HKIndependence
 socialbot: snscrape twitter-hashtag NationalSecurityLaw
-
+socialbot: snscrape twitter-user AlvinYeungnk
+socialbot: snscrape twitter-user ray_slowbeat
+socialbot: snscrape twitter-user ChuHoiDick
+socialbot: snscrape twitter-user AlanKahKitLeong
+socialbot: snscrape twitter-user BrianLeungKP
+socialbot: snscrape twitter-user FreedomHKG

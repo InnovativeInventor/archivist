@@ -17,7 +17,8 @@ func main() {
         log.Fatal(err)
     }
 
-	bloomfilter := bloom.NewWithEstimates(400000000, 0.00001)
+	/*bloomfilter := bloom.NewWithEstimates(400000000, 0.00001)*/
+	bloomfilter := bloom.NewWithEstimates(400000000, 0.0001)
 
 	count := 0
 

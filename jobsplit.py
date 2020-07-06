@@ -38,35 +38,27 @@ if __name__ == "__main__":
     # queue_uri = sqs.get_queue_url(QueueName="queuebot.fifo").get('QueueUrl')
     with open("jobs/jobs.txt", "w") as f:
         for each_account in accounts:
-            uri = str(
-                subprocess.run(
-                    "curl --upload-file jobs/{filename} https://transfer.notkiska.pw/{filename}".format(
-                        filename=gen_filename(each_account)
-                    ),
-                    shell=True,
-                    capture_output=True,
-                ).stdout.decode()
-            )
-            # print("Added", uri, each_account, "to queue", queue_uri)
+            # uri = str(
+                # subprocess.run(
+                    # "curl --upload-file jobs/{filename} https://transfer.notkiska.pw/{filename}".format(
+                        # filename=gen_filename(each_account)
+                    # ),
+                    # shell=True,
+                    # capture_output=True,
+                # ).stdout.decode()
+            # )
+            uri = "https://archive.max.fan/{filename}".format(filename=gen_filename(each_account))
             f.write(uri + "\n")
             print("Added", uri)
 
-            # response = sqs.send_message(
-            # QueueUrl=queue_uri,
-            # MessageAttributes={
-            # "Twitter-Account": {"DataType": "String", "StringValue": str(each_account)},
-            # },
-            # MessageBody=str(uri),
-            # MessageGroupId='queuebot',
-            # MessageDeduplicationId=str(each_account)
-            # )
     print(
         "Jobs list",
-        subprocess.run(
-            "curl --upload-file jobs/{filename} https://transfer.notkiska.pw/{filename}".format(
-                filename="jobs.txt"
-            ),
-            shell=True,
-            capture_output=True,
-        ).stdout.decode()
+        "https://archive.max.fan/jobs.txt"
+        # subprocess.run(
+            # "curl --upload-file jobs/{filename} https://transfer.notkiska.pw/{filename}".format(
+                # filename="jobs.txt"
+            # ),
+            # shell=True,
+            # capture_output=True,
+        # ).stdout.decode()
     )
