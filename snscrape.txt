@@ -1,9 +1,9 @@
 snscrape twitter-hashtag CausewayBay
 snscrape twitter-hashtag HKIndependence
 snscrape twitter-hashtag NSL
-snscrape twitter-hashtag streetlaw
 snscrape twitter-hashtag NationalSecurityLaw
 snscrape twitter-hashtag deathforxijinping
+snscrape twitter-hashtag streetlaw
 snscrape twitter-list-posts 1225540451920482306
 snscrape twitter-search "legal aid"
 snscrape twitter-user 10YFP
@@ -35,6 +35,7 @@ snscrape twitter-user AbraarKaran
 snscrape twitter-user AdelAljubeir
 snscrape twitter-user AidejuridiqueON
 snscrape twitter-user AlMissionUN
+snscrape twitter-user AlanKahKitLeong
 snscrape twitter-user AlannaHartzokD9
 snscrape twitter-user AlbankAldawli
 snscrape twitter-user AlecMacGillis
@@ -44,6 +45,7 @@ snscrape twitter-user AlfonsoDurazo
 snscrape twitter-user AlgeriaUN
 snscrape twitter-user AliHoshow
 snscrape twitter-user AliceThourot
+snscrape twitter-user AlvinYeungnk
 snscrape twitter-user AlyssaMGoodman
 snscrape twitter-user AmandaB1201
 snscrape twitter-user AmbKawar
@@ -115,6 +117,7 @@ snscrape twitter-user BosyUncle
 snscrape twitter-user BradEickholt
 snscrape twitter-user BrentNYT
 snscrape twitter-user BrianDahleCA
+snscrape twitter-user BrianLeungKP
 snscrape twitter-user Brian_Rohan
 snscrape twitter-user BrunoLeMaire
 snscrape twitter-user BryceDHoward
@@ -182,6 +185,7 @@ snscrape twitter-user ChoateAthletics
 snscrape twitter-user ChoateGvh
 snscrape twitter-user ChoateHoops
 snscrape twitter-user ChrisChristie
+snscrape twitter-user ChuHoiDick
 snscrape twitter-user Cim_Katja
 snscrape twitter-user CindyPoloFL103
 snscrape twitter-user CityOfRocksNPS
@@ -300,6 +304,7 @@ snscrape twitter-user FortLarnedNPS
 snscrape twitter-user FrancesRobles
 snscrape twitter-user FrancoiseNyssen
 snscrape twitter-user FredMonyak
+snscrape twitter-user FreedomHKG
 snscrape twitter-user French_Gov
 snscrape twitter-user FundacionONU
 snscrape twitter-user GEFI_Youth
@@ -615,6 +620,8 @@ snscrape twitter-user Msg_of_Humanity
 snscrape twitter-user Muheisen81
 snscrape twitter-user Myers4SD
 snscrape twitter-user MyrtleBeachGov
+snscrape twitter-user NAACP
+snscrape twitter-user NAACP_LDF
 snscrape twitter-user NBelloubet
 snscrape twitter-user NCSecState
 snscrape twitter-user NDRFHQ
@@ -673,6 +680,7 @@ snscrape twitter-user NYflyfisher
 snscrape twitter-user NZUN
 snscrape twitter-user NadiaMuradBasee
 snscrape twitter-user Nataliew1020
+snscrape twitter-user NateSilver538
 snscrape twitter-user Nate_Cohn
 snscrape twitter-user NatureNPS
 snscrape twitter-user NayaritGobierno
@@ -1142,6 +1150,7 @@ snscrape twitter-user UNrightsSeoul
 snscrape twitter-user USAmbUN
 snscrape twitter-user USPPNYFO
 snscrape twitter-user USPP_SFFO
+snscrape twitter-user USPhongkong
 snscrape twitter-user USRepKCastor
 snscrape twitter-user USTradeRep
 snscrape twitter-user USUN
@@ -1569,6 +1578,7 @@ snscrape twitter-user profvrr
 snscrape twitter-user pxwhittle
 snscrape twitter-user rachel_dry
 snscrape twitter-user radiookapi
+snscrape twitter-user ray_slowbeat
 snscrape twitter-user rbfallstromAP
 snscrape twitter-user rcfp
 snscrape twitter-user rcjonesphoto
@@ -1699,7 +1709,3 @@ snscrape twitter-user yuenok
 snscrape twitter-user zhonggg
 snscrape twitter-user zivkapark
 snscrape twitter-user zzoemoee
-snscrape twitter-user NateSilver538
-snscrape twitter-user USPhongkong
-snscrape twitter-user NAACP
-snscrape twitter-user NAACP_LDF
