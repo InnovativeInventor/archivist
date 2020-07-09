@@ -6,4 +6,19 @@ nytimes
 TeamWarren
 ILAO
 LegalAidNYC
+MethuenPolice
+ChelmsfordPD
+BillericaPD
+CityofLowellMA
+burlingtonpd
+HanoverPolice
+WalthamMAPolice
+dovermapd
+BoxboroughPD
+msosheriff
+TyngsboroughPD
+OEMLowell
+MassStatePolice
+MassGovernor
+CityOfBoston
 # elizaorlins

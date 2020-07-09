@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	fileglob := "/Volumes/Cabinet/archivebot/*.txt"
+	fileglob := "../../archivebot/*.txt"
 	files, err := filepath.Glob(fileglob)
     if err != nil {
         log.Fatal(err)

@@ -11,26 +11,29 @@ def gen_filename(account_name: str) -> str:
 accounts = []
 if __name__ == "__main__":
     for count, line in enumerate(sys.stdin):
-        if count == 0:
-            account_name = line.split("twitter.com/")[1].split("/")[0]
-            current_account = account_name
-            f = open("jobs/" + gen_filename(account_name), "w")
-            f.write(line)
+        if line := line.rstrip():
+            if count == 0:
+                account_name = line.split("twitter.com/")[1].split("/")[0]
+                current_account = account_name
+                f = open("jobs/" + gen_filename(account_name), "w")
+                f.write(line + "\n")
 
-            accounts.append(account_name)
-
-        elif line.split("twitter.com/")[1].split("/")[0] == current_account:
-            f.write(line + "\n")
-
-        else:
-            f.close()
-            account_name = line.split("twitter.com/")[1].split("/")[0]
-            current_account = account_name
-            f = open("jobs/" + gen_filename(account_name), "w")
-            f.write(line)
-
-            if account_name not in accounts:
                 accounts.append(account_name)
+
+            elif line.split("twitter.com/")[1].split("/")[0] == current_account:
+                f.write(line + "\n")
+
+            else:
+                f.close()
+                account_name = line.split("twitter.com/")[1].split("/")[0]
+                current_account = account_name
+                f = open("jobs/" + gen_filename(account_name), "w")
+                f.write(line + "\n")
+
+                if account_name not in accounts:
+                    accounts.append(account_name)
+
+    print("Total items:", count, "Total accounts:", len(accounts))
 
     f.close()
 
@@ -49,7 +52,7 @@ if __name__ == "__main__":
             # )
             uri = "https://archive.max.fan/{filename}".format(filename=gen_filename(each_account))
             f.write(uri + "\n")
-            print("Added", uri)
+            # print("Added", uri)
 
     print(
         "Jobs list",
