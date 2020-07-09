@@ -1,3 +1,4 @@
+
 snscrape twitter-list-posts 1225540451920482306
 snscrape twitter-user 10YFP
 snscrape twitter-user 3807Limon
@@ -46,6 +47,11 @@ snscrape twitter-user AmbMKamau
 snscrape twitter-user Ami_Sterling
 snscrape twitter-user AminaJMohammed
 snscrape twitter-user AmirhVahdat
+snscrape twitter-user AndoverDPW
+snscrape twitter-user AndoverMaGov
+snscrape twitter-user AndoverMassPD
+snscrape twitter-user AndoverPD
+snscrape twitter-user AndoverPS
 snscrape twitter-user Andrej_Kiska
 snscrape twitter-user AndrewDasNYT
 snscrape twitter-user Ann4Congress
@@ -85,6 +91,7 @@ snscrape twitter-user Beatrice_Dupuy
 snscrape twitter-user BedelSaget
 snscrape twitter-user BejiCEOfficial
 snscrape twitter-user BelgiumUN
+snscrape twitter-user BelmontPD
 snscrape twitter-user BenAllenCA
 snscrape twitter-user BenWeiserNYT
 snscrape twitter-user BenjaminDooley
@@ -103,10 +110,12 @@ snscrape twitter-user BillLeeTN
 snscrape twitter-user Bill_Brink2
 snscrape twitter-user Bill_Morneau
 snscrape twitter-user BilldeBlasio
+snscrape twitter-user BillericaPD
 snscrape twitter-user BogdanAurescu
 snscrape twitter-user BoliviaUNNY
 snscrape twitter-user BorderlessEdu
 snscrape twitter-user BosyUncle
+snscrape twitter-user BoxboroughPD
 snscrape twitter-user BradEickholt
 snscrape twitter-user BrentNYT
 snscrape twitter-user BrianDahleCA
@@ -169,6 +178,7 @@ snscrape twitter-user CenacedAC
 snscrape twitter-user ChantalBIYA_Cmr
 snscrape twitter-user CharlestonPD
 snscrape twitter-user Charleston_Fire
+snscrape twitter-user ChelmsfordPD
 snscrape twitter-user ChickamaugaNPS
 snscrape twitter-user ChicoChamber
 snscrape twitter-user ChicoFD
@@ -181,9 +191,11 @@ snscrape twitter-user ChrisChristie
 snscrape twitter-user ChuHoiDick
 snscrape twitter-user Cim_Katja
 snscrape twitter-user CindyPoloFL103
+snscrape twitter-user CityOfBoston
 snscrape twitter-user CityOfRocksNPS
 snscrape twitter-user City_of_Mobile
 snscrape twitter-user CityofDetroit
+snscrape twitter-user CityofLowellMA
 snscrape twitter-user ClaudiaTorrens
 snscrape twitter-user ClimateNPS
 snscrape twitter-user ColumbusGov
@@ -209,6 +221,7 @@ snscrape twitter-user DanCardenMP
 snscrape twitter-user DanaiGurira
 snscrape twitter-user Danielle_4PA
 snscrape twitter-user DannyFaure
+snscrape twitter-user DanversPolice
 snscrape twitter-user Data4SDGs
 snscrape twitter-user DataDhrumil
 snscrape twitter-user DavidALieb
@@ -217,6 +230,7 @@ snscrape twitter-user DavidPorter_AP
 snscrape twitter-user DavidYankovich
 snscrape twitter-user DayemiFdn
 snscrape twitter-user DeWineHustedOH
+snscrape twitter-user DedhamPD
 snscrape twitter-user DefenceMinIndia
 snscrape twitter-user DelaCruzMusalem
 snscrape twitter-user DelponMichelEM
@@ -287,6 +301,7 @@ snscrape twitter-user FeroRuzicka
 snscrape twitter-user FilippoGrandi
 snscrape twitter-user FilomenaTassi
 snscrape twitter-user FireAviationNPS
+snscrape twitter-user FitchburgPolice
 snscrape twitter-user FlesselLaura
 snscrape twitter-user FloIriondo
 snscrape twitter-user FluNearYou
@@ -356,6 +371,7 @@ snscrape twitter-user HHPreservItNPS
 snscrape twitter-user HUNMissionToUN
 snscrape twitter-user HalRogersKY5
 snscrape twitter-user HamdoDelic
+snscrape twitter-user HanoverPolice
 snscrape twitter-user HarjitSajjan
 snscrape twitter-user HassanAmmar5
 snscrape twitter-user HawleyMO
@@ -376,6 +392,7 @@ snscrape twitter-user HolySeeUN
 snscrape twitter-user HonAhmedHussen
 snscrape twitter-user HonEdgarCLungu
 snscrape twitter-user HongKongFP
+snscrape twitter-user HudsonMaPD
 snscrape twitter-user HughGaffneyCCB
 snscrape twitter-user HumanitarianID
 snscrape twitter-user IAF_MCC
@@ -516,6 +533,8 @@ snscrape twitter-user Lithuania
 snscrape twitter-user LizTwistMP
 snscrape twitter-user LizetteScribe
 snscrape twitter-user LondonBreed
+snscrape twitter-user LowellFireDept
+snscrape twitter-user LowellPD
 snscrape twitter-user LtGovDavidson
 snscrape twitter-user LuetkemeyerB
 snscrape twitter-user LuisCarrilhoPC
@@ -523,6 +542,7 @@ snscrape twitter-user LuisaAlcalde
 snscrape twitter-user LukeHall
 snscrape twitter-user LutzHen
 snscrape twitter-user LuxembourgUN
+snscrape twitter-user LynnPoliceDept
 snscrape twitter-user LynneSladky
 snscrape twitter-user MAECHaiti
 snscrape twitter-user MANovicki
@@ -569,7 +589,9 @@ snscrape twitter-user Mary_Luisa_AG
 snscrape twitter-user MaryamMonsef
 snscrape twitter-user Maryclairedale
 snscrape twitter-user Masood__Khan
+snscrape twitter-user MassGovernor
 snscrape twitter-user MassLS
+snscrape twitter-user MassStatePolice
 snscrape twitter-user MattFutterman
 snscrape twitter-user MattHerdman
 snscrape twitter-user MaudPetit_AN94
@@ -580,6 +602,7 @@ snscrape twitter-user MayorGinther
 snscrape twitter-user MayorJenny
 snscrape twitter-user MayorMemphis
 snscrape twitter-user MayorMikeDuggan
+snscrape twitter-user MethuenPolice
 snscrape twitter-user MetroPhotoPete
 snscrape twitter-user MeyerFalcon
 snscrape twitter-user MezardJacques
@@ -683,6 +706,7 @@ snscrape twitter-user Network4yRA
 snscrape twitter-user NicoleDubre17
 snscrape twitter-user NigeriaGov
 snscrape twitter-user NimrodAndrew
+snscrape twitter-user NoAndoverPolice
 snscrape twitter-user NortheastNPS
 snscrape twitter-user NotifyLA
 snscrape twitter-user NuLawLab
@@ -694,6 +718,7 @@ snscrape twitter-user OCHA_CAR
 snscrape twitter-user OCHA_Ethiopia
 snscrape twitter-user OCHA_Mali
 snscrape twitter-user OCHA_Syria
+snscrape twitter-user OEMLowell
 snscrape twitter-user OHCHR_MENA
 snscrape twitter-user OITinfo
 snscrape twitter-user OMBPress
@@ -870,6 +895,7 @@ snscrape twitter-user SanFran_TJobs
 snscrape twitter-user SantulN
 snscrape twitter-user SaraMZiegler
 snscrape twitter-user SasakawaYohei
+snscrape twitter-user SaugusPD
 snscrape twitter-user SciWriAlicia
 snscrape twitter-user ScotGovEurope
 snscrape twitter-user ScottCacciola
@@ -979,6 +1005,7 @@ snscrape twitter-user TulsiGabbard
 snscrape twitter-user TulsiPress
 snscrape twitter-user Turkey_UN
 snscrape twitter-user TwitterGov
+snscrape twitter-user TyngsboroughPD
 snscrape twitter-user Typhanie_Degois
 snscrape twitter-user UChicagoPARR
 snscrape twitter-user UKIP
@@ -1192,6 +1219,8 @@ snscrape twitter-user WRatliffAP
 snscrape twitter-user WVCantWait
 snscrape twitter-user WVGOP
 snscrape twitter-user WYGOP
+snscrape twitter-user WalthamMAPolice
+snscrape twitter-user WatertownPD
 snscrape twitter-user WayneMessam
 snscrape twitter-user WayneParryAC
 snscrape twitter-user WeAreTrivandrum
@@ -1254,6 +1283,7 @@ snscrape twitter-user aptonygutierrez
 snscrape twitter-user apwillweissert
 snscrape twitter-user arlegalaid
 snscrape twitter-user arniestapleton
+snscrape twitter-user arwgilbert
 snscrape twitter-user austinramzy
 snscrape twitter-user avivainvestors
 snscrape twitter-user axios
@@ -1272,10 +1302,12 @@ snscrape twitter-user bokatlindell
 snscrape twitter-user borenbears
 snscrape twitter-user bostonNHP
 snscrape twitter-user boston_techjobs
+snscrape twitter-user bostonpolice
 snscrape twitter-user bpolitics
 snscrape twitter-user bru_vincent
 snscrape twitter-user brucenytimes
 snscrape twitter-user brunepoirson
+snscrape twitter-user burlingtonpd
 snscrape twitter-user bydanielvictor
 snscrape twitter-user bykaren
 snscrape twitter-user campbellnyt
@@ -1303,6 +1335,7 @@ snscrape twitter-user conagua_clima
 snscrape twitter-user conagua_mx
 snscrape twitter-user conniebritton
 snscrape twitter-user countyofsb
+snscrape twitter-user cstewartiii
 snscrape twitter-user ctlong1
 snscrape twitter-user daldenAP
 snscrape twitter-user danablanton_nyc
@@ -1319,6 +1352,7 @@ snscrape twitter-user dhopkins1776
 snscrape twitter-user dinacappiello
 snscrape twitter-user dionnesearcey
 snscrape twitter-user dougmillsnyt
+snscrape twitter-user dovermapd
 snscrape twitter-user drcarolinej
 snscrape twitter-user dustcloud_io
 snscrape twitter-user dutch3stef
@@ -1512,6 +1546,7 @@ snscrape twitter-user mokhbersahafi
 snscrape twitter-user moll_david
 snscrape twitter-user motokorich
 snscrape twitter-user msoiunya
+snscrape twitter-user msosheriff
 snscrape twitter-user murielpenicaud
 snscrape twitter-user mzvcr
 snscrape twitter-user namibia_mfa
@@ -1523,6 +1558,7 @@ snscrape twitter-user newshound16
 snscrape twitter-user nikolajcw
 snscrape twitter-user nnasserx
 snscrape twitter-user noreensnasir
+snscrape twitter-user north_andover
 snscrape twitter-user npfandos
 snscrape twitter-user npmadigan
 snscrape twitter-user nymongolia
@@ -1702,40 +1738,3 @@ snscrape twitter-user yuenok
 snscrape twitter-user zhonggg
 snscrape twitter-user zivkapark
 snscrape twitter-user zzoemoee
-snscrape twitter-user cstewartiii
-snscrape twitter-user AndoverPD
-snscrape twitter-user AndoverMassPD
-snscrape twitter-user LowellPD
-snscrape twitter-user NoAndoverPolice
-snscrape twitter-user HudsonMaPD
-snscrape twitter-user AndoverMaGov
-snscrape twitter-user AndoverDPW
-snscrape twitter-user MethuenPolice
-snscrape twitter-user north_andover
-snscrape twitter-user AndoverPS
-snscrape twitter-user arwgilbert
-snscrape twitter-user LowellPD
-snscrape twitter-user ChelmsfordPD
-snscrape twitter-user BillericaPD
-snscrape twitter-user CityofLowellMA
-snscrape twitter-user burlingtonpd
-snscrape twitter-user HanoverPolice
-snscrape twitter-user BelmontPD
-snscrape twitter-user WalthamMAPolice
-snscrape twitter-user WatertownPD
-snscrape twitter-user FitchburgPolice
-snscrape twitter-user dovermapd
-snscrape twitter-user DedhamPD
-snscrape twitter-user BoxboroughPD
-snscrape twitter-user msosheriff
-snscrape twitter-user LowellFireDept
-snscrape twitter-user TyngsboroughPD
-snscrape twitter-user LynnPoliceDept
-snscrape twitter-user DanversPolice
-snscrape twitter-user SaugusPD
-snscrape twitter-user OEMLowell
-snscrape twitter-user MassStatePolice
-snscrape twitter-user MassGovernor
-snscrape twitter-user bostonpolice
-snscrape twitter-user CityOfBoston
-
