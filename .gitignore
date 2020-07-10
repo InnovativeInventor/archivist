@@ -1,4 +1,5 @@
 config.py
+manual/twitter-@*.txt
 jobs/
 items.txt
 unique-items.txt
