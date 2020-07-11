@@ -64,7 +64,7 @@ func main() {
 	scanner.Buffer(buf, 2048*1024)
 	for scanner.Scan() {
 		url := scanner.Text()
-		if bloomfilter.TestAndAddString(strings.TrimSpace(url)) {
+		if ! bloomfilter.TestAndAddString(strings.TrimSpace(url)) {
 			fmt.Println(url)
 		}
 	}
