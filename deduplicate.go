@@ -2,64 +2,39 @@ package main
 
 import (
     "fmt"
-    "path/filepath"
 	"log"
 	"bufio"
+	"encoding/json"
+	"io/ioutil"
 	"os"
 	"github.com/willf/bloom"
 	"strings"
 )
 
 func main() {
-	fileglob := "../../archivebot/*.txt"
-	files, err := filepath.Glob(fileglob)
-    if err != nil {
-        log.Fatal(err)
-    }
+	var bloomfilter bloom.BloomFilter
 
-	/*bloomfilter := bloom.NewWithEstimates(400000000, 0.00001)*/
-	bloomfilter := bloom.NewWithEstimates(400000000, 0.0001)
+	file, _ := ioutil.ReadFile("bloom.json")
+	err := json.Unmarshal(file, &bloomfilter)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
 
-	count := 0
-
-	for _, filename := range files {
-		file, err := os.Open(filename)
-		log.Println("Adding to bloom filter:", filename)
-		if err != nil {
-			log.Println(err)
-			file.Close()
-			continue
-		}
-		/*defer file.Close()*/
-
-		scanner := bufio.NewScanner(file)
-		buf := make([]byte, 0, 64*1024)
-		scanner.Buffer(buf, 2048*1024)
-		for scanner.Scan() {
-			bloomfilter.AddString(strings.TrimSpace(scanner.Text()))
-			count += 1
-		}
-
-		if err := scanner.Err(); err != nil {
-			log.Println(err)
-			continue
-		}
-
-		file.Close()
-    }
-
-	log.Println("Successfully added the following number of items to the bloom filter:")
-	log.Println(count)
+	if bloomfilter.TestString("test") && ! bloomfilter.TestString("nulltest"){
+		log.Println("Ok! Loaded bloom filter properly")
+	} else {
+		log.Fatal("Bloom filter not loaded properly")
+	}
 
 	filename := "items.txt"
-	file, err := os.Open(filename)
+	file_items, err := os.Open(filename)
 	if err != nil {
 		log.Println(err)
-		file.Close()
+		file_items.Close()
 	}
-	defer file.Close()
+	defer file_items.Close()
 
-	scanner := bufio.NewScanner(file)
+	scanner := bufio.NewScanner(file_items)
 	buf := make([]byte, 0, 64*1024)
 	scanner.Buffer(buf, 2048*1024)
 	for scanner.Scan() {

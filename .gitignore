@@ -1,4 +1,5 @@
 config.py
+bloom.json
 manual/twitter-@*.txt
 jobs/
 items.txt

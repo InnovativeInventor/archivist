@@ -33,7 +33,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err.Error())
 		}
-		if bloomfilter.TestString("test") and ! bloomfilter.TestString("nulltest"){
+		if bloomfilter.TestString("test") && ! bloomfilter.TestString("nulltest"){
 			log.Println("Ok! Loaded bloom filter properly")
 		} else {
 			log.Fatal("Bloom filter not loaded properly")
