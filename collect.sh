@@ -4,7 +4,7 @@ sort -u snscrape.txt > snscrape-temp.txt
 cat snscrape-temp.txt > snscrape.txt
 rm snscrape-temp.txt
 
-bash snscrape.txt > items.txt
+bash snscrape.txt >> items.txt
 
 go run deduplicate.go | sort -u | python3 jobsplit.py
 
