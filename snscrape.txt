@@ -1,4 +1,13 @@
-
+snscrape facebook-user andrzejduda
+snscrape facebook-user JoachimBrudzinski
+snscrape facebook-user DonaldTrump
+snscrape facebook-user OcasioCortez
+snscrape facebook-user alexandriaocasiocortezfanclub
+snscrape facebook-user repAOC
+snscrape facebook-user DonaldJTrumpJr
+snscrape facebook-user TheAtlantic
+snscrape facebook-user joebiden
+snscrape facebook-group 2242593392699758
 snscrape twitter-list-posts 1225540451920482306
 snscrape twitter-user 10YFP
 snscrape twitter-user 3807Limon
@@ -101,6 +110,7 @@ snscrape twitter-user AndoverPS
 snscrape twitter-user Andrej_Kiska
 snscrape twitter-user AndrewBeatty
 snscrape twitter-user AndrewDasNYT
+snscrape twitter-user AndrzejDuda
 snscrape twitter-user AnellaReta
 snscrape twitter-user AngusM1966
 snscrape twitter-user Ann4Congress
@@ -1205,6 +1215,7 @@ snscrape twitter-user PlacerCA
 snscrape twitter-user PlacerSheriff
 snscrape twitter-user PlacesMA
 snscrape twitter-user Plaid_Cymru
+snscrape twitter-user Plaid_Duda
 snscrape twitter-user PlymouthNHPD
 snscrape twitter-user PlymouthSheriff
 snscrape twitter-user Plymouth_Police
@@ -1225,6 +1236,7 @@ snscrape twitter-user PriceDPS1
 snscrape twitter-user PrivacyProject
 snscrape twitter-user Puglaas
 snscrape twitter-user QPPOA
+snscrape twitter-user QubesOS
 snscrape twitter-user RABurgoa
 snscrape twitter-user RAULARBOLEDA
 snscrape twitter-user RCPaddock
@@ -1446,6 +1458,7 @@ snscrape twitter-user SiobhanStarrs
 snscrape twitter-user SitiNurbayaLHK
 snscrape twitter-user SleepingBearNPS
 snscrape twitter-user SmallBizCmte
+snscrape twitter-user Snowden
 snscrape twitter-user SojournHouse
 snscrape twitter-user SolutionsJCOP22
 snscrape twitter-user SomOptimistic
@@ -2077,6 +2090,7 @@ snscrape twitter-user inamrgte
 snscrape twitter-user indgop
 snscrape twitter-user indiannavy
 snscrape twitter-user indonesiaunny
+snscrape twitter-user internetsociety
 snscrape twitter-user inyoungk
 snscrape twitter-user iraq_un
 snscrape twitter-user irishmissionun
@@ -2170,6 +2184,7 @@ snscrape twitter-user ldkeith
 snscrape twitter-user lecocqcharlotte
 snscrape twitter-user legalhackNYC
 snscrape twitter-user leshnerd
+snscrape twitter-user letsencrypt
 snscrape twitter-user liamstack
 snscrape twitter-user lissdag
 snscrape twitter-user litalie
@@ -2257,6 +2272,7 @@ snscrape twitter-user nhshtown
 snscrape twitter-user nicografico
 snscrape twitter-user nikolajcw
 snscrape twitter-user nnasserx
+snscrape twitter-user noamchomskyT
 snscrape twitter-user noreensnasir
 snscrape twitter-user north_andover
 snscrape twitter-user northeasternpd
@@ -2324,6 +2340,7 @@ snscrape twitter-user pololikashvili
 snscrape twitter-user poroshenko
 snscrape twitter-user porterthereport
 snscrape twitter-user pparkspix
+snscrape twitter-user prezydentpl
 snscrape twitter-user princetongerry
 snscrape twitter-user profvrr
 snscrape twitter-user pxwhittle
@@ -2499,6 +2516,8 @@ snscrape twitter-user writeboston
 snscrape twitter-user writeit4wardhhs
 snscrape twitter-user wvsosoffice
 snscrape twitter-user wywapple
+snscrape twitter-user xen_org
+snscrape twitter-user xychelsea
 snscrape twitter-user yarmouthpolice
 snscrape twitter-user yayaberlin
 snscrape twitter-user yeahrkrogerthat
@@ -2507,3 +2526,6 @@ snscrape twitter-user yuenok
 snscrape twitter-user zhonggg
 snscrape twitter-user zivkapark
 snscrape twitter-user zzoemoee
+snscrape twitter-user PatrykJaki
+snscrape twitter-user BeataSzydlo
+snscrape twitter-user jbrudzinski

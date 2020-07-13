@@ -26,15 +26,8 @@ func main() {
 		log.Fatal("Bloom filter not loaded properly")
 	}
 
-	filename := "items.txt"
-	file_items, err := os.Open(filename)
-	if err != nil {
-		log.Println(err)
-		file_items.Close()
-	}
-	defer file_items.Close()
-
-	scanner := bufio.NewScanner(file_items)
+	log.Println("Ready for reading input")
+	scanner := bufio.NewScanner(os.Stdin)
 	buf := make([]byte, 0, 64*1024)
 	scanner.Buffer(buf, 2048*1024)
 	for scanner.Scan() {
