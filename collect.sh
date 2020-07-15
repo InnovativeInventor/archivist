@@ -1,10 +1,9 @@
-python3 gather-accounts.py snscrape >> snscrape.txt
+python3 gather_accounts.py snscrape >> snscrape.txt
 
 sort -u snscrape.txt > snscrape-temp.txt
-cat snscrape-temp.txt > snscrape.txt
-rm snscrape-temp.txt
+mv snscrape-temp.txt snscrape.txt
 
-cat snscrape.txt | python3 archive.py
+python3 archive.py
 
 #go run deduplicate.go | sort -u | python3 jobsplit.py
 
