@@ -8,7 +8,7 @@ import logger
 import requests
 from multiprocessing import Pool
 
-DEDUP_LOC = "http://127.0.0.1:3000/"
+DEDUP_LOC = "http://100.73.113.91:3000/"
 proxies = []
 
 def snscrape_commands():
@@ -16,8 +16,15 @@ def snscrape_commands():
         for each_line in f:
             yield each_line.rstrip()
 
-def check_filter(url: str) -> str:
-    return requests.get(DEDUP_LOC + base64.urlsafe_b64encode(str(url).rstrip().encode()).decode()).text
+def check_filter(url: str, sleep = 10) -> str:
+    try:
+        return requests.get(DEDUP_LOC + base64.urlsafe_b64encode(str(url).rstrip().encode()).decode()).text
+    except requests.exceptions.ConnectionError:
+        time.sleep(sleep)
+        logger.Logger.log_info(str(e))
+        logger.Logger.log_info("Error, delaying")
+        return check_filter(url, sleep+30)
+
 
 def main():
     assert not check_filter("test")
@@ -30,8 +37,9 @@ def main():
 
     # for count, line in enumerate(sys.stdin):
     logger.Logger.log_info("Reading from snscrape.txt")
+    commands = list(snscrape_commands())
     with Pool(4) as p:
-        p.map(writejob, list(snscrape_commands()))
+        p.map(writejob, commands)
 
 def writejob(line):
     logger.Logger.log_info(line)
