@@ -23,14 +23,22 @@ def account_lists(account: str, socialbot=False):
     lists = api.lists_all(user.screen_name)
     for each_list in lists:
         try:
-            for each_member in each_list.members():
+            for each_member in api.list_members(list_id=int(each_list._json.get("id"))): 
                 name = each_member.screen_name
                 if socialbot:
                     print("socialbot: snscrape twitter-user", name)
                 else:
                     print("snscrape twitter-user", name)
+            # for each_member in each_list.members():
+                # name = each_member.screen_name
+                # if socialbot:
+                    # print("socialbot: snscrape twitter-user", name)
+                # else:
+                    # print("snscrape twitter-user", name)
+
         except tweepy.error.TweepError as e:
-            raise ValueError(account + str(e))
+            continue
+            # raise ValueError(str(account + " " + each_list._json.get("id_str") + " " + str(e)))
 
 
 def iterate_accounts(filename: str = "accounts.txt", socialbot: bool = False):
