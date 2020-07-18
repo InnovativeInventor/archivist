@@ -20,9 +20,9 @@ def check_filter(url: str, sleep = 10) -> str:
     try:
         return requests.get(DEDUP_LOC + base64.urlsafe_b64encode(str(url).rstrip().encode()).decode()).text
     except requests.exceptions.ConnectionError:
-        time.sleep(sleep)
         logger.Logger.log_info(str(e))
         logger.Logger.log_info("Error, delaying")
+        time.sleep(sleep)
         return check_filter(url, sleep+30)
 
 
