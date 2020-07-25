@@ -4,6 +4,7 @@ sort -u snscrape.txt > snscrape-temp.txt
 mv snscrape-temp.txt snscrape.txt
 
 python3 archive.py
+find jobs/ -empty -type f -delete
 
 #go run deduplicate.go | sort -u | python3 jobsplit.py
 
