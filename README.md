@@ -3,6 +3,8 @@ This project is for [queuebot](https://github.com/InnovativeInventor/queuebot) t
 
 Currently there is a strong focus on governmental and activist tweets, but some Facebook accounts are also present. Deduplication is currently accomplished through a large bloom filter, which allows for space-efficient checking against previously archived tweets.
 
+More documentation is forthcoming.
+
 ## Sync (with Internet Archive)
 ```bash
 ia download --search 'collection:archivebot' --glob '*twitter-*.txt' -i -C --no-directories 
