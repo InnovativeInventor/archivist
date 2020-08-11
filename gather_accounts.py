@@ -25,10 +25,11 @@ def account_lists(account: str, socialbot=False):
         try:
             for each_member in api.list_members(list_id=int(each_list._json.get("id"))): 
                 name = each_member.screen_name
-                if socialbot:
-                    print("socialbot: snscrape twitter-user", name)
-                else:
-                    print("snscrape twitter-user", name)
+                if name:
+                    if socialbot:
+                        print("socialbot: snscrape twitter-user", name)
+                    else:
+                        print("snscrape twitter-user", name)
             # for each_member in each_list.members():
                 # name = each_member.screen_name
                 # if socialbot:
