@@ -63,6 +63,10 @@ def writejob(line):
             filename += "twitter-list-{arg}"
             scraper = snscrape.modules.twitter.TwitterListPostsScraper(line[2])
 
+        elif line[1] == "twitter-hashtag":
+            filename += "twitter-hashtag-{arg}"
+            scraper = snscrape.modules.twitter.TwitterHashtagScraper(line[2])
+
         else:
             raise ValueError(" ".join(line))
 
