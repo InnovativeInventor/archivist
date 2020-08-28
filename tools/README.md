@@ -12,3 +12,15 @@ Useful vim commands:
 g!/.pdf/d
 g!/./d
 ```
+
+## Bookmarklet
+Run server by calling:
+```bash
+uvicorn check:app
+```
+
+```
+<a href="javascript:window.location="http://127.0.0.1:8000?url="+encodeURIComponent(document.location)">Add to Archive</a>
+```
+
+<a href="javascript:window.location="http://127.0.0.1:8000?url="+encodeURIComponent(document.location)">Add to Archive</a>

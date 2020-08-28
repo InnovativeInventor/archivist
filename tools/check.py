@@ -5,6 +5,21 @@ import json
 import requests
 import logger
 import time
+from fastapi import FastAPI
+import uvicorn
+
+app = FastAPI()
+
+@app.get("/")
+async def root(url: str):
+    r = fetch_response(url)
+    if not r.get("archived_snapshots").get("closest"):
+        logger.Logger.log_info("Not in WBM")
+        with open("items.txt", "a") as f:
+            f.write(url + "\n")
+    else:
+        logger.Logger.log_info("In WBM")
+    return {"Success": True}
 
 def fetch_response(url: str, delay: int = 3):
     wbm_url = "http://archive.org/wayback/available?url={url}"
@@ -16,16 +31,16 @@ def fetch_response(url: str, delay: int = 3):
         return fetch_response(url, delay+3)
     return r
 
-counter = 0
-for count, line in enumerate(sys.stdin):
-    url = line.rstrip()
-    r = fetch_response(url)
-    if not r.get("archived_snapshots").get("closest"):
-        counter += 1
-        logger.Logger.log_info("Not in WBM, counter is at " + str(counter))
-        with open("items.txt", "a") as f:
-            f.write(url + "\n")
-    else:
-        logger.Logger.log_info("In WBM")
-
+if __name__ == "__main__":
+    counter = 0
+    for count, line in enumerate(sys.stdin):
+        url = line.rstrip()
+        r = fetch_response(url)
+        if not r.get("archived_snapshots").get("closest"):
+            counter += 1
+            logger.Logger.log_info("Not in WBM, counter is at " + str(counter))
+            with open("items.txt", "a") as f:
+                f.write(url + "\n")
+        else:
+            logger.Logger.log_info("In WBM")
 
