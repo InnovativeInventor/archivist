@@ -1,0 +1,16 @@
+Before editing, please set your nick in the top right corner.
+I also recommend disabling 'Show Author on Hover' and 'Authorship colours' in the settings (cogwheel top right).
+
+	* When something is done, use strikethrough (shortcut: Ctrl + 5).
+	* Remove junk from URLs before archiving them, and use the canonical URL format. Also fix the URL in here please.
+		* Note that if the URL contains 'jpg', 'png', 'gif', 'bmp', or possibly some other  image-extension-like strings, in any capitalisation, Etherpad tries to insert it as an image. Remove http:// or https:// in that case. (See https://ballotpedia.org/Justin_Paglino for an example.)
+	* If you discover more things (e.g. more social media linked on a website but not listed here), add them and make them italic.
+	* To add notes for a URL, insert a new line below it with two extra spaces of indentation.
+
+Parts:
+	* https://pad.riseup.net/p/ballotpedia-congress-candidates-2020-part1-keep
+	* https://pad.riseup.net/p/ballotpedia-congress-candidates-2020-part2-keep
+	* https://pad.riseup.net/p/ballotpedia-congress-candidates-2020-part3-keep
+	* https://pad.riseup.net/p/ballotpedia-congress-candidates-2020-part4-keep
+	* https://pad.riseup.net/p/ballotpedia-congress-candidates-2020-part5-keep
+	* https://pad.riseup.net/p/ballotpedia-congress-candidates-2020-part6-keep

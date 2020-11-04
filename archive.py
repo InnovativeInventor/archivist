@@ -1,13 +1,17 @@
 import base64
-import secrets
+import glob
 import datetime
-import validators
-import snscrape.modules
 import os
-import logger
-import requests
+import secrets
 from multiprocessing import Pool
 
+import requests
+import snscrape.modules
+import validators
+
+import logger
+
+DEDUP = False
 DEDUP_LOC = "http://100.73.113.91:3000/"
 proxies = []
 
@@ -17,20 +21,24 @@ def snscrape_commands():
             yield each_line.rstrip()
 
 def check_filter(url: str, sleep = 10) -> str:
-    try:
-        return requests.get(DEDUP_LOC + base64.urlsafe_b64encode(str(url).rstrip().encode()).decode()).text
-    except requests.exceptions.ConnectionError:
-        logger.Logger.log_info(str(e))
-        logger.Logger.log_info("Error, delaying")
-        time.sleep(sleep)
-        return check_filter(url, sleep+30)
+    if DEDUP:
+        try:
+            return requests.get(DEDUP_LOC + base64.urlsafe_b64encode(str(url).rstrip().encode()).decode()).text
+        except requests.exceptions.ConnectionError:
+            logger.Logger.log_info(str(e))
+            logger.Logger.log_info("Error, delaying")
+            time.sleep(sleep)
+            return check_filter(url, sleep+30)
+    else:
+        return True
 
 
 def main():
-    assert not check_filter("test")
-    test_str = secrets.token_hex(8)
-    assert check_filter(test_str) == test_str
-    assert not check_filter(test_str) == test_str
+    if DEDUP:
+        assert not check_filter("test")
+        test_str = secrets.token_hex(8)
+        assert check_filter(test_str) == test_str
+        assert not check_filter(test_str) == test_str
     # p = subprocess.Popen(["go", "run", "deduplicate.go"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
     # child = pexpect.spawn('go run deduplicate.go', timeout=6000)
     # child.delaybeforesend = None
@@ -38,15 +46,16 @@ def main():
     # for count, line in enumerate(sys.stdin):
     logger.Logger.log_info("Reading from snscrape.txt")
     commands = list(snscrape_commands())
-    with Pool(4) as p:
-        p.map(writejob, commands)
+    list(map(writejob, commands))
+    # with Pool(4) as p:
+    #     p.map(writejob, commands)
 
 def writejob(line):
     logger.Logger.log_info(line)
-    if line := line.rstrip().split():
-        filename = "jobs/" + datetime.datetime.today().strftime('%Y%m%d') + "/"
-        directory = filename
-
+    filename = "jobs/" + datetime.datetime.today().strftime('%Y%m') + "/"
+    directory = filename
+    line = line.rstrip().split() 
+    if not glob.glob(directory + "*" + line[2] + "*"):
         if line[1] == "twitter-user":
             filename += "twitter-@{arg}"
             scraper = snscrape.modules.twitter.TwitterUserScraper(username=line[2])
@@ -71,7 +80,9 @@ def writejob(line):
             raise ValueError(" ".join(line))
 
         filename = filename.format(arg=line[2])
-        filename += "-" + datetime.datetime.today().strftime('%Y%m%d')
+        
+        filename += "-" + datetime.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+        jsonname=filename + ".jsonl"
         filename += ".txt"
 
         logger.Logger.log_info("Job " + filename)
@@ -96,17 +107,33 @@ def writejob(line):
         if not os.path.exists(directory):
             os.makedirs(directory)
 
-        if not os.path.exists(filename):
-            with open(filename, "w") as f:
-                items = list(scraper.get_items())
-                for count, each_item in enumerate(items):
-                    url = check_filter(str(each_item))
+        try:
+            with open(jsonname, "w") as j:
+                j.write(scraper.entity.json() + "\n")
+                with open(filename, "w") as f:
+                    items = list(scraper.get_items())
+                    for count, each_item in enumerate(items):
+                        if DEDUP:
+                            url = check_filter(str(each_item))
+                        else:
+                            url = str(each_item).rstrip()
 
-                    if url and validators.url(url):
-                        # logger.Logger.log_info("At item " + str(count) + " " + url)
-                        f.write(url + "\n")
+                        j.write(each_item.json() + "\n")
 
-        logger.Logger.log_info("Done with " + filename)
+                        if url and validators.url(url):
+                            # logger.Logger.log_info("At item " + str(count) + " " + url)
+                            f.write(url + "\n")
+
+            logger.Logger.log_info("Done with " + filename)
+        except KeyError:
+            with open("error.log", "a+") as e:
+                e.write("KeyError with " + filename + "\n")
+            logger.Logger.log_info("KeyError with " + filename)
+        except KeyboardInterrupt:
+            print(line)
+            raise KeyboardInterrupt
+    else:
+        logger.Logger.log_info(f"Skipped {line}")
 
     logger.Logger.log_info("Done")
 

@@ -16,10 +16,12 @@ async def root(url: str):
     if not r.get("archived_snapshots").get("closest"):
         logger.Logger.log_info("Not in WBM")
         with open("items.txt", "a") as f:
-            f.write(url + "\n")
+            f.write("!ao " + url + "\n")
+        return {"Success": True}
     else:
         logger.Logger.log_info("In WBM")
-    return {"Success": True}
+        return {"Success": False}
+    return {"Success": False}
 
 def fetch_response(url: str, delay: int = 3):
     wbm_url = "http://archive.org/wayback/available?url={url}"
@@ -40,7 +42,7 @@ if __name__ == "__main__":
             counter += 1
             logger.Logger.log_info("Not in WBM, counter is at " + str(counter))
             with open("items.txt", "a") as f:
-                f.write(url + "\n")
+                f.write("!ao " + url + "\n")
         else:
             logger.Logger.log_info("In WBM")
 

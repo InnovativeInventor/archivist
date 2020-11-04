@@ -9,6 +9,7 @@ license = "MIT License"
 python = "^3.8"
 tweepy = "^3.9.0"
 snscrape = "^0.3.4"
+pysmaz = {git = "https://github.com/CordySmith/PySmaz"}
 
 [tool.poetry.dev-dependencies]
 internetarchive = "^1.9.4"
