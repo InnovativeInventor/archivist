@@ -15,6 +15,8 @@ good = re.compile(r"[0-9]*Z.txt")
 bad = re.compile(r"[0-9]*.txt")
 
 jobs = glob.glob("jobs/202011/*.txt")
+path = "https://archive.max.fan/{job}"
+
 for each_job in jobs:
     each_jsonl = each_job.replace(".txt", ".jsonl")
     if os.path.isfile(each_jsonl):
@@ -27,14 +29,16 @@ for each_job in jobs:
                 # print(tweet_obj["username"])
                 if tweet_obj["username"].rstrip() not in each_job:
                     rename = re.compile(re.escape(tweet_obj["username"]), re.IGNORECASE).sub(tweet_obj["username"], each_job)
-                    if bad.search(each_job) and not good.search(each_job):
-                        rename = bad.sub(estimated_creation_time_formatted + ".txt", rename)
-
-                    if rename.rstrip() != each_job.rstrip():
-                        shutil.move(each_job, rename)
-                    print(rename)
                 else:
-                    print(each_job)
+                    rename = each_job
+
+                if bad.search(each_job) and not good.search(each_job):
+                    rename = bad.sub(estimated_creation_time_formatted + ".txt", rename)
+
+                if rename.rstrip() != each_job.rstrip():
+                    shutil.move(each_job, rename)
+                print(path.format(job=rename))
+
 
             except StopIteration:
                 continue
